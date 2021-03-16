@@ -8,11 +8,13 @@ const tree = new BinarySearchTree();
 tree.addNodes(arr);
 
 document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>
+<h1>Binary search tree</h1>
 <div>
-  <p>Search (found): ${JSON.stringify(tree.search(94688))}</p>
+  <p>Search (found):<br> <code>${JSON.stringify(tree.search(94688))}</code></p>
   <hr />
-  <p>Search (not found): ${JSON.stringify(tree.search(11))}</p>
+  <p>Search (not found):<br>  <code>${JSON.stringify(
+    tree.search(11)
+  )}</code></p>
   <p></p>
 </div>
 `;
